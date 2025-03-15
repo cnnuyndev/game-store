@@ -1,0 +1,120 @@
+.container {
+  padding-bottom: 167px;
+  height: 485px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03193A;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 260px;
+}
+
+@media (max-width: 768px){
+  .wrapper{
+    // height: auto;
+    .card{
+      width: auto;
+      flex-direction: column-reverse;
+      .left_column{
+        .header{
+          font-size: 16px;
+        }
+        .subheader{
+          font-size: 24px;
+        }
+        .button{
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+  .container{
+    width: auto;
+    padding: 30px 50px 200px 50px;
+  }
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  // width: 1195px;
+  height: 423px;
+  border-radius: 40px;
+  padding: 24px;
+  transform-origin: center center;
+  cursor: pointer;
+  display: flex;
+}
+
+.left_column {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.right_column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  border-radius: 0 8px 8px 0;
+}
+
+.button {
+  width: 340px;
+  height: 50px;
+  background-color: #ec4899;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 21px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #db2777;
+  }
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFFFFF;
+  font-size: 21px;
+  width: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+  filter: alpha(opacity=90);
+}
+.subheader {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 10px 0;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.emoji {
+  font-size: 32px;
+}
